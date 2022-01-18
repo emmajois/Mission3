@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="~/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--Styles-->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/mystyles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <p>Emma Joi Gardner</p>
+        <nav>
+            <a asp-controller="First" asp-action="Index">Home</a>
+            <a asp-controller="First" asp-action="Form">Form</a>
+        </nav>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--Javascript links-->
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+    
+</body>
+</html>
