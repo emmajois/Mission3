@@ -1,4 +1,4 @@
-﻿$("#calc").click(function calculategrade() {
+﻿$("#calc").submit(function calculategrade() {
     //Define variables, get them using jquery
     let assignment = $("#assignments").val();
     let group = $("#groups").val();

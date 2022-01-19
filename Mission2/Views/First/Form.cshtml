@@ -9,7 +9,7 @@
 
 <!--Form-->
 <h2>Grade Calculator</h2>
-<form  method="post">
+<form id="calc" method="post">
     <label>Assignments:</label>
     <input id="assignments" asp-for="Assignment" /><br />
     <label>Group Project:</label>
@@ -24,5 +24,6 @@
 </form>
 
 <div asp-validation-summary="All"></div>
+
 <!--Javascript-->
 <script src="~/js/script.js"></script>
